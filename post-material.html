@@ -1,0 +1,107 @@
+<div id="blog-header" style="background: url(images/blog/midium/2.png); background-size: cover;">
+    <div class="overlay"></div>
+    <div class="single-post-title">
+        <h1>Material Design for Web</h1>
+        <p class="post-info">
+            <span class="post-author">Posted by Vijay Krishnamooerthy</span>
+            <span class="slash"></span>
+            <span class="post-date">APR 13, 2018</span>
+            <span class="slash"></span>
+            <span class="post-catetory">Design</span>
+        </p>
+    </div>
+</div>
+<div class="block-content">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="single-post">
+                <div class="post">
+                    <div class="post-body">
+                        <p>Make beautiful products, faster. Material is a design system – backed by open-source code – that helps teams build digital experiences</p>
+                        <blockquote>
+                           Design flexibility
+                        </blockquote>
+                        <p>Get started with detailed design guidance and create custom Material themes to make your product unique. </p>
+                        <blockquote>
+                           Develope across Platforms
+                        </blockquote>
+                        <p>Everything you need to start building – including open-source code, documentation, and tutorials for cross-platform development. </p>
+                        <blockquote>
+                           Colloborate seemlessly
+                        </blockquote>
+                        <p>Design and build faster with new tools that make it easy to customize Material and share work across teams.</p>
+                        <div class="col-md-12 btn-email">
+                            <a href="https://material.io/" class="btn btn-dark">Click here to know more</a>
+                        </div>
+                    </div>
+                    <div class="author-box row">
+                        <div class="col-sm-2">
+                            <img src="images/blog/author.jpg" class="rounded-circle" alt="..." />
+                        </div>
+                        <div class="col-sm-10">
+                            <h3>Vijay Krishnamoorthy<span> | Author</span></h3>
+                            <p>He is the jack of all trade, but master of none.
+
+
+                            </p>
+                        </div>
+                    </div>
+                    <ul id="blog-social">
+                        <li>Share this : </li>
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                    <div class="project-nav text-center">
+                        <span class="float-left">
+                            <a class="open-project" href="post-amp.html">&leftarrow; Previous Project</a>
+                        </span>
+                        <span class="">
+                            <a id="close-project" href="#"><i class="ion-grid"></i></a>
+                        </span>
+                        <span class="float-right">
+                            <a class="open-project" href="post-svg.html">Next Project &rightarrow; </a>
+                        </span>
+                    </div>
+                </div>
+                <div id="respond">
+                    <h3>Leave a comment</h3>
+                    <div class="comment-respond">
+                        <form class="comment-form">
+                            <div class="form-double">
+                                <div class="form-group">
+                                    <input name="author" type="text" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="form-group last">
+                                    <input name="email" type="text" class="form-control" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Comment"></textarea>
+                            </div>
+                            <div class="form-submit">
+                                <button type="button" class="btn btn-dark">Post Comment</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('.open-post').on('click', function() {
+        var postUrl = $(this).attr("href");
+        $('.inline-menu-container').removeClass('showx');
+        $('.content-blocks.pop').addClass('showx');
+        $('.content-blocks.pop section').load(postUrl)
+        return false;
+    });
+    $('#close-post').on('click', function() {
+        $('.content-blocks.pop').removeClass('showx');
+        $('.inline-menu-container').addClass('showx');
+        $('.content-blocks.pop section').empty();
+    });
+</script>

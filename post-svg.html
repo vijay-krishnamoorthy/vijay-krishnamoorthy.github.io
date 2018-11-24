@@ -1,0 +1,127 @@
+<div id="blog-header" style="background: url(images/blog/midium/3.png); background-size: cover;">
+    <div class="overlay"></div>
+    <div class="single-post-title">
+        <h1>SVG Line animations - made simple</h1>
+        <p class="post-info">
+            <span class="post-author">Posted by Vijay Krishnamoorthy</span>
+            <span class="slash"></span>
+            <span class="post-date">Dec 08, 2017</span>
+            <span class="slash"></span>
+            <span class="post-catetory">Animation</span>
+        </p>
+    </div>
+</div>
+<div class="block-content">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="single-post">
+                <div class="post">
+                    <div class="post-body">
+                        <p>Scalable Vector Graphics (SVGs) help in solving a part of that problem, and do it very well. Although they have their limitations, SVGs can be very helpful for certain occasions and, if you have a good design team, you can also create a more visually stunning experience without putting undue burden the web browser or hampering the load times.</p>
+                        <p>During the last few months, I have been working on a project that is making extensive use of SVG and its animation and effect capabilities. In this article, I will share how you can use SVG and its animation techniques to bring some new life to your web front-end work.</p>
+                        <blockquote>
+                           Scalable Vector Graphics
+                        </blockquote>
+                        <p>SVG is an image format that is based on XML, much like how HTML works. It defines different elements for a number of familiar geometric shapes that can be combined in the markup to produce two-dimensional graphics.
+                        The SVG specification is an open standard developed by the World Wide Web Consortium (W3C) in 1999.
+                        All major web browsers have had SVG rendering support for a while now.
+                        Since SVG graphics are XML documents, web browsers provide DOM node-based APIs that can be used to interact with the images. Talk about bringing pictures to life!</p>
+                        <blockquote>
+                            SVG Paths
+                        </blockquote>
+                        <p>You can think of a virtual pen that draws on the screen, and the drawing comments in the path element merely controls the pen. In the example above, the pen is being instructed to move to position (10, 10) (M10 10), to draw a line to (75, 10) (L75 10), to draw a line to (75, 75) L75 75 and then to close the path by returning to the starting point (Z).
+                        Using other drawing commands, such as arcs (A), quadratic bezier curves (Q), cubic bezier curves (C), etc you can create much more complex shapes and graphics in SVG.</p>
+                        <blockquote>
+                            SVG Paths and CSS
+                        </blockquote>
+                        <p>“Okay Vijay, I get it. Paths are powerful, but how do I animate them?” you say.
+                            For our first technique, we are going to take advantage of two SVG attributes: stroke-dasharray and stroke-dashoffset.
+
+                            The stroke-dasharray attribute controls the pattern of dashes and gaps used to stroke the path. If you wanted to draw your lines as a group of dashes and gaps instead of one continuous stroke of ink, this is the attribute you would use.</p>
+                            <p>With SVG images being a part of the web browser’s DOM and stroke-dasharray being a presentation element, the attribute can also be set using CSS.
+                            Similarly, the stroke-dashoffset attribute (which specifies how far into the dash pattern to start the dash) can also be controlled using CSS.
+                            These two SVG attributes, together, can be used to animate SVG paths, giving the viewer the illusion that the paths are being drawn gradually.</p>
+                            <p>To animate this path as if it is being drawn gradually and smoothly on the screen, we will have to set the dash (and gap) lengths, using the stroke-dasharray attribute, equal to the path length. This is so that the length of each dash and gap in the dashed curve is equal to the length of the entire path.</p>
+                        <blockquote>
+                            SVG Animations Using JavaScript
+                        </blockquote>
+                        <p>If all of these are not fancy enough already, you can always resort to JavaScript.
+                            Animating SVG elements with JavaScript can be much like animating DOM elements. However, with JavaScript, you can achieve the animation techniques we have checked out above, but more easily.</p>
+                            <p>Previously, we had to hardcode the path lengths in our CSS. With the help of the JavaScript function path.getTotalLength() it is possible to calculate the length of the path on-the-fly and use it as needed. You can learn more about it here.</p>
+                            <p>Besides, a number of libraries are already at your disposal that can make SVG animations a lot easier than it already is.</p>
+                            <p><a href="http://snapsvg.io/" target="_blank">Snap.svg</a> not only makes it easy to draw SVG images using JavaScript, it makes animating them as simple as calling .animate({}).</p>
+                            <p>Another library, <a href="http://animejs.com/" target="_blank">anime.js</a>, lets you make a div element follow an SVG path with just a few lines of code.</p>
+                            <p>If you are looking for a library that does more on its own but makes the results still look stunning, then <a href="https://maxwellito.github.io/vivus/" target="_blank">Vivus.js</a> is what you are looking for. It takes a different, more configuration-driven approach to SVG path animation. With this library, you just have to add an ID to the SVG element you want to draw and define a Vivus object with that ID. Vivus will take care of the rest.</p>
+                            <div class="col-md-12 btn-email">
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial" class="btn btn-dark" target="_blank">Click here to know more</a>
+                            </div>
+                    </div>
+                    <div class="author-box row">
+                        <div class="col-sm-2">
+                            <img src="images/blog/author.jpg" class="rounded-circle" alt="..." />
+                        </div>
+                        <div class="col-sm-10">
+                            <h3>Vijay Krishnamoorthy<span> | Blogger</span></h3>
+                            <p>He is the jack of all trade, but master of none.
+                            </p>
+                        </div>
+                    </div>
+                    <ul id="blog-social">
+                        <li>Share this : </li>
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                    <div class="project-nav text-center">
+                        <span class="float-left">
+                            <a class="open-project" href="post-material.html">&leftarrow; Previous Project</a>
+                        </span>
+                        <span class="">
+                            <a id="close-project" href="#"><i class="ion-grid"></i></a>
+                        </span>
+                        <span class="float-right">
+                            <a class="open-project" href="post-illustration.html">Next Project &rightarrow; </a>
+                        </span>
+                    </div>
+                </div>
+                <div id="respond">
+                    <h3>Leave a comment</h3>
+                    <div class="comment-respond">
+                        <form class="comment-form">
+                            <div class="form-double">
+                                <div class="form-group">
+                                    <input name="author" type="text" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="form-group last">
+                                    <input name="email" type="text" class="form-control" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Comment"></textarea>
+                            </div>
+                            <div class="form-submit">
+                                <button type="button" class="btn btn-dark">Post Comment</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('.open-post').on('click', function() {
+        var postUrl = $(this).attr("href");
+        $('.inline-menu-container').removeClass('showx');
+        $('.content-blocks.pop').addClass('showx');
+        $('.content-blocks.pop section').load(postUrl)
+        return false;
+    });
+    $('#close-post').on('click', function() {
+        $('.content-blocks.pop').removeClass('showx');
+        $('.inline-menu-container').addClass('showx');
+        $('.content-blocks.pop section').empty();
+    });
+</script>

@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title>Test</title>
+	<style>
+	body{
+		padding: 0;
+		margin: 0;
+	}
+	form{
+		transform: translate(50%,50%);
+		display: inline-flex;
+	}
+	button{
+		margin: 2px;
+		border: 2px solid #000;
+		border-radius: 20%;
+	}
+	input[type="text"],input[type="email"]{
+		border-bottom: 2px solid #000;
+	}
+</style>
+<body>
+	<form  method="POST" action="contact.php">
+                                    <div class="form-group">
+                                        <input  type="text" class="form-control" name="Name" autocomplete="off" required data-error="Please enter your name" placeholder="* Your Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input  type="email" class="form-control" name="email" autocomplete="off" required data-error="Please enter your email" placeholder="* Your Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea  class="form-control textarea" rows="10" name="Message" required data-error="Please enter your message subject" placeholder="* Your Message"> 
+                                        </textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <button id="submit" type="submit" name="Submit"class="btn selected">Send Message</button>
+                                    </div>
+                                </form>
+	</body>
+</html>

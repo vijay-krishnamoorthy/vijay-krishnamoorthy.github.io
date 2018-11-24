@@ -1,0 +1,119 @@
+<div id="blog-header" style="background: url(images/blog/midium/1.png); background-size: cover;">
+    <div class="overlay"></div>
+    <div class="single-post-title">
+        <h1>Accelerated Mobile Pages</h1>
+        <p class="post-info">
+            <span class="post-author">Posted by Vijay Krishnamoorthy</span>
+            <span class="slash"></span>
+            <span class="post-date">AUG 12, 2018</span>
+            <span class="slash"></span>
+            <span class="post-catetory">Frameworks</span>
+        </p>
+    </div>
+</div>
+<div class="block-content">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="single-post">
+                <div class="post">
+                    <div class="post-body">
+                        <h3>Improve user engagement with fast, compelling experiences.</h3>
+                        <p>Web page speed improves the user experience and core business metrics. AMP pages load near instantly enabling you to offer a consistently fast experience across all devices and platforms that link to AMP Pages including Google, Bing, LinkedIn and more. These performance gains often translate in improvements in the numbers that matter, such as time spent on page, return visits and CTRs.</p>
+                        <h4>How AMP can help you</h4>
+                        <blockquote>
+                            Keep your audience engaged
+                        </blockquote>
+                        <p>AMP pages typically load in under one second. That means when your target audience lands on an AMP page, they get what they’re looking for in the moment they’re looking for it. The net result -- they’re more likely to be engaged with and receptive to your brand’s messages, and more likely to take the actions you’re guiding them towards like completing a purchase.</p>
+                        <blockquote>
+                          Maximize your revenue
+                        </blockquote>
+                        <p>Conversions fall by 12 percent for every extra second a webpage takes to load. If you want people to engage with your brand and increase your sales and the performance of your campaigns, you have to speed things up. AMP offers a way for you to give users a faster experience everywhere -- on ads, landing pages or your entire website.</p>
+                        <blockquote>
+                          Maintain flexibility and control
+                        </blockquote>
+                        <p>Adopting the AMP format allows you to retain your own branding and tooling while taking advantage of AMP's optimized web components. You can use CSS to customize your styling, dynamic data to fetch the freshest data where needed, and A/B testing to experiment and build the best possible user experience for your customers.</p>
+                        <blockquote>
+                            Reduce complexity in your operations
+                        </blockquote>
+                        <p>Building AMP pages is simple and straightforward. You can often convert your entire archive in days especially if you use a popular CMS such as Wordpress and Drupal. Your teams do not need any special skills nor worry about optimizing your code for each distribution platform as the AMP format is fully portable and AMP pages are consistently fast no matter how a user gets to them.</p>
+                        <blockquote>
+                          Maximize your ROI
+                        </blockquote>
+                        <p>Building the right landing page, ad, or web content takes time. AMP pages can be built once and distributed across a wide variety of distribution platforms simultaneously. With AMPHTML Ads, your ads can serve on both AMP and non-AMP pages, meaning you can build your ads once and deliver a memorable brand experience everywhere.</p>
+                        <blockquote>
+                            Build for a sustainable future
+                        </blockquote>
+                        <p>The AMP Project is an open source initiative to protect the future of the web helping everyone deliver a better, faster user experience. Build a sustainable future for your business on an open, faster web by joining the AMP Project.</p>
+                        <div class="col-md-12 btn-email">
+                            <a class="btn btn-dark open-post" href="https://www.ampproject.org/learn/overview/">Click here to know more</a>
+                        </div>
+                    </div>
+                    <div class="author-box row">
+                        <div class="col-sm-2">
+                            <img src="images/blog/author.jpg" class="rounded-circle" alt="..." />
+                        </div>
+                        <div class="col-sm-10">
+                            <h3>Vijay Krishnamoorthy<span> | Blogger</span></h3>
+                            <p>He is the jack of all trade, but master of none.
+                            </p>
+                        </div>
+                    </div>
+                    <ul id="blog-social">
+                        <li>Share this : </li>
+                       <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                    <div class="project-nav text-center">
+                        <span class="float-left">
+                            <a class="open-project" href="post-illustration.html">&leftarrow; &nbsp; Previous Blog</a>
+                        </span>
+                                        <span class="">
+                            <a id="close-project" href="#"><i class="ion-grid"></i></a>
+                        </span>
+                                        <span class="float-right">
+                            <a class="open-project" href="post-material.html">Next Blog &nbsp; &rightarrow; </a>
+                        </span>
+                    </div>
+                </div>
+                <div id="respond">
+                    <h3>Leave a comment</h3>
+                    <div class="comment-respond">
+                        <form class="comment-form">
+                            <div class="form-double">
+                                <div class="form-group">
+                                    <input name="author" type="text" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="form-group last">
+                                    <input name="email" type="text" class="form-control" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Comment"></textarea>
+                            </div>
+                            <div class="form-submit">
+                                <button type="button" class="btn btn-dark">Post Comment</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+$('.open-post').on('click', function() {
+    var postUrl = $(this).attr("href");
+    $('.inline-menu-container').removeClass('showx');
+    $('.content-blocks.pop').addClass('showx');
+    $('.content-blocks.pop section').load(postUrl)
+    return false;
+});
+$('#close-post').on('click', function() {
+    $('.content-blocks.pop').removeClass('showx');
+    $('.inline-menu-container').addClass('showx');
+    $('.content-blocks.pop section').empty();
+});
+</script>

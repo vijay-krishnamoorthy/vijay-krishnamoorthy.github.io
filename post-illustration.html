@@ -1,0 +1,113 @@
+<div id="blog-header" style="background: url(images/blog/midium/4.png); background-size: cover;">
+    <div class="overlay"></div>
+    <div class="single-post-title">
+        <h1>The state of the art of illustration.</h1>
+        <p class="post-info">
+            <span class="post-author">Posted by Vijay Krishnamoorthy</span>
+            <span class="slash"></span>
+            <span class="post-date">APR 15, 2017</span>
+            <span class="slash"></span>
+            <span class="post-catetory">Illustration</span>
+        </p>
+    </div>
+</div>
+<div class="block-content">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="single-post">
+                <div class="post">
+                    <div class="post-body">
+                        <h3>Illustrator is all around you.</h3>
+                        <p>Millions of designers and artists use Illustrator CC to create everything from web icons and product packaging to book illustrations and billboards.</p>
+                        <p>Adobe Illustrator CC is a close sourced software distribution which has lot features to develope and create your artworks digitally!</p>
+                        <blockquote>
+                            Iconic work at any size.
+                        </blockquote>
+                        <p>Get all the drawing tools you need to turn simple shapes and colours into sophisticated logos, icons and graphics. Illustrator artwork is vector-based software, so it can scale down for mobile screens and up to billboard size — and always look crisp and beautiful.</p>
+                        <blockquote>
+                            Gorgeous typography that says it all.
+                        </blockquote>
+                        <p>Incorporate a company name into a logo, create a flyer or mock up a website design with the best type tools out there. Add effects, manage styles and edit individual characters to create typographic designs that perfectly express your messages.</p>
+                         <blockquote>
+                            Draw attention everywhere.
+                        </blockquote>
+                        <p>Create freehand drawings or trace and recolor imported photos to turn them into works of art. Use your illustrations anywhere, including printed pieces, presentations, websites, blogs and social media.</p>
+                         <blockquote>
+                            See what new can do.
+                        </blockquote>
+                        <p>Illustrator is always getting better, with new features rolling out regularly. And with your Creative Cloud membership, you get them as soon as we release them. Here are some of the latest updates.</p>
+                        <div class="col-md-12 btn-email">
+                            <a class="btn btn-dark open-post" href="https://www.adobe.com/in/products/illustrator.html">Click here to know more</a>
+                        </div>
+                    </div>
+                    <div class="author-box row">
+                        <div class="col-sm-2">
+                            <img src="images/blog/author.jpg" class="rounded-circle" alt="..." />
+                        </div>
+                        <div class="col-sm-10">
+                            <h3>John Sparrow<span> | Blogger</span></h3>
+                            <p>He is the jack of all trade, but master of none.
+
+
+                            </p>
+                        </div>
+                    </div>
+                    <ul id="blog-social">
+                        <li>Share this : </li>
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                    <div class="project-nav text-center">
+                        <span class="float-left">
+                            <a class="open-project" href="post-svg.html">&leftarrow; Previous Project</a>
+                        </span>
+                        <span class="">
+                            <a id="close-project" href="#"><i class="ion-grid"></i></a>
+                        </span>
+                        <span class="float-right">
+                            <a class="open-project" href="post-amp.html">Next Project &rightarrow; </a>
+                        </span>
+                    </div>
+                </div>
+                <div id="respond">
+                    <h3>Leave a comment</h3>
+                    <div class="comment-respond">
+                        <form class="comment-form">
+                            <div class="form-double">
+                                <div class="form-group">
+                                    <input name="author" type="text" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="form-group last">
+                                    <input name="email" type="text" class="form-control" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Comment"></textarea>
+                            </div>
+                            <div class="form-submit">
+                                <button type="button" class="btn btn-dark">Post Comment</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('.open-post').on('click', function() {
+        var postUrl = $(this).attr("href");
+        $('.inline-menu-container').removeClass('showx');
+        $('.content-blocks.pop').addClass('showx');
+        $('.content-blocks.pop section').load(postUrl)
+        return false;
+    });
+    $('#close-post').on('click', function() {
+        $('.content-blocks.pop').removeClass('showx');
+        $('.inline-menu-container').addClass('showx');
+        $('.content-blocks.pop section').empty();
+    });
+</script>
