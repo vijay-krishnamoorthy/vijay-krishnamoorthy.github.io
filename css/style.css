@@ -36,6 +36,7 @@
 -------------------------------------------------------------------*/
 
 body {
+	background-color: #727272;
     font: 400 14px 'Poppins', sans-serif;
     -webkit-font-smoothing: antialiased;
     line-height: 30px;
